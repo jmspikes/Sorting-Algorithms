@@ -8,15 +8,87 @@
 		<div class="bg">
 			<h1 class="styletext" id="title">Sorting Algorithms</h1>
 				<div class="wrapper">
-					<div class="sort styletext" id="quick">Quicksort</div>
-					<div class="sort styletext" id="merge">Merge Sort</div>
-					<div class="sort styletext" id="insertion">Insertion Sort</div>
-					<div class="sort styletext" id="heap">Heapsort</div>
-					<div class="sort styletext" id="counting">Counting Sort</div>
-					<div class="sort styletext" id="comb">Comb Sort</div>
-					<div class="sort styletext" id="shell">Shellsort</div>
-					<div class="sort styletext" id="bucket">Bucket Sort</div>
+					<div class="sort styletext" id="quick">Quicksort
+							<div class="slideContainer">
+									<input type="range" min="1" max = "20" value="5" class="slider" id="quickSlide">
+								<div class="sliderNumber" id="quickNum"></div>
+							</div>
+					
+
+						<div class="sortArea" id="quickArea">
+						
+
+						</div>
+
+
+					</div>
+
+					<div class="sort styletext" id="merge">Merge Sort
+							<div class="slideContainer">
+									<input type="range" min="1" max = "20" value="5" class="slider" id="mergeSlide">
+								<div class="sliderNumber" id="mergeNum"></div>
+							</div>
+
+						<div class="sortArea" id="mergeArea"></div>
+
+					</div>
+					<div class="sort styletext" id="insertion">Insertion Sort
+							<div class="slideContainer">
+									<input type="range" min="1" max = "20" value="5" class="slider" id="insertSlide">
+								<div class="sliderNumber" id="insertNum"></div>
+							</div>
+
+						<div class="sortArea" id="insertArea"></div>
+
+					</div>
+					<div class="sort styletext" id="heap">Heapsort
+							<div class="slideContainer">
+									<input type="range" min="1" max = "20" value="5" class="slider" id="heapSlide">
+								<div class="sliderNumber" id="heapNum"></div>
+							</div>
+
+						<div class="sortArea" id="heapArea"></div>
+
+					</div>
+					<div class="sort styletext" id="counting">Counting Sort
+							<div class="slideContainer">
+									<input type="range" min="1" max = "20" value="5" class="slider" id="countSlide">
+								<div class="sliderNumber" id="countNum"></div>
+							</div>
+
+						<div class="sortArea" id="countArea"></div>
+
+					</div>
+					<div class="sort styletext" id="comb">Comb Sort
+							<div class="slideContainer">
+									<input type="range" min="1" max = "20" value="5" class="slider" id="combSlide">
+								<div class="sliderNumber" id="combNum"></div>
+							</div>
+
+						<div class="sortArea" id="combArea"></div>
+
+					</div>
+					<div class="sort styletext" id="shell">Shellsort
+								<div class="slideContainer">
+									<input type="range" min="1" max = "20" value="5" class="slider" id="shellSlide">
+								<div class="sliderNumber" id="shellNum"></div>
+							</div>
+
+						<div class="sortArea" id="shellArea"></div>
+
+					</div>
+					<div class="sort styletext" id="bucket">Bucket Sort
+							<div class="slideContainer">
+									<input type="range" min="1" max = "20" value="5" class="slider" id="bucketSlide">
+								<div class="sliderNumber" id="bucketNum"></div>
+							</div>
+
+						<div class="sortArea" id="bucketArea"></div>
+
+					</div>
 				</div>
 		</div>
+		<script src="sortingjs.js"></script>
+		<script src="initsliders.js"></script>
 	</body>
 </html>
