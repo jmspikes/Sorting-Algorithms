@@ -17,10 +17,10 @@ html{
 .wrapper{
 
 	display: grid;
-	position: center;
+	justify-items: center;
 	grid-template-columns: 2;
 	grid-template-rows: 4;
-	grid-gap: 100px;
+	grid-gap: 50px;
 }
 
 /*used to style all sorting backgrounds
