@@ -17,6 +17,7 @@ html{
 .wrapper{
 
 	display: grid;
+	position: center;
 	grid-template-columns: 2;
 	grid-template-rows: 4;
 	grid-gap: 100px;
@@ -31,7 +32,7 @@ html{
     border-radius: 5px;
     height: 300px;
     width: 600px;
-    background-color: rgb(31,126,158);
+    background-color: #1f7e9e;
 }
 
 .sortArea{
