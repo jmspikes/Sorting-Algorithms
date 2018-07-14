@@ -32,13 +32,21 @@ merge = function(itemArr, left, middle, right){
 		if(lArr[i] <= rArr[j]){
 			itemArr[k] = lArr[i];
 			mItems[k].innerHTML = lArr[i];
-			$('#'+mItems[k].id).animate({height:lArr[i]+'%'},800);
+			$('#'+mItems[k].id).animate({height:lArr[i]+'%'},800,
+				function(){
+					$(this).text(lArr[i]);
+				}
+				);
 			i++;
 		}
 		else{
 			itemArr[k] = rArr[j];
 			mItems[k].innerHTML = rArr[j];
-			$('#'+mItems[k].id).animate({height:rArr[j]+'%'},800);
+			$('#'+mItems[k].id).animate({height:rArr[j]+'%'},800,
+				function(){
+					$(this).text(rArr[j]);
+				}
+				);
 			j++;
 		}
 		k++;
@@ -47,7 +55,11 @@ merge = function(itemArr, left, middle, right){
 	while(i < number1){
 		itemArr[k] = lArr[i];
 		mItems[k].innerHTML = lArr[i];
-		$('#'+mItems[k].id).animate({height:lArr[i]+'%'}, 800);
+		$('#'+mItems[k].id).animate({height:lArr[i]+'%'}, 800,
+				function(){
+					$(this).text(lArr[i]);
+				}
+				);
 		i++;
 		k++;
 	}
@@ -55,7 +67,11 @@ merge = function(itemArr, left, middle, right){
 	while(j < number2){
 		itemArr[k] = rArr[j];
 		mItems[k].innerHTML = rArr[j];		
-		$('#'+mItems[k].id).animate({height:rArr[j]+'%'}, 800);
+		$('#'+mItems[k].id).animate({height:rArr[j]+'%'}, 800,
+				function(){
+					$(this).text(rArr[j]);
+				}
+				);
 		j++;
 		k++;
 	}

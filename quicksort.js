@@ -50,10 +50,14 @@ swap = function(val1, val2, holder){
 	//basic swap logic
 	let temp = holder[val1];
 	holder[val1] = holder[val2];
-	qItems[val1].innerHTML = holder[val2];
-	$('#'+qItems[val1].id).animate({height:holder[val2]+'%'},800);
+	$('#'+qItems[val1].id).animate({height:holder[val1]+'%'},800,
+		function(){
+			$(this).text(holder[val1]);
+		});
 	holder[val2] = temp;
-	qItems[val2].innerHTML = temp;
-	$('#'+qItems[val2].id).animate({height:temp+'%'},800);
+	$('#'+qItems[val2].id).animate({height:holder[val2]+'%'},800,
+		function(){
+			$(this).text(holder[val2]);
+		});
 
 }
