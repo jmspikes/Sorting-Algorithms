@@ -8,7 +8,6 @@ let countArray = [];
 let combArray = [];
 let shellArray = [];
 let bucketArray = [];
-
 //initializes array of ints to be used by various sorting algorithms
 let data = [];
 for(let i = 0; i < 20; i++){
@@ -16,7 +15,6 @@ for(let i = 0; i < 20; i++){
 		//96-100 and 1-5 will fit graphically 
 		 data.push(Math.floor(Math.random() * 90)+6);
 }
-
 //quicksort slider
 let quick = document.getElementById("quickSlide");
 let quickOutput = document.getElementById("quickNum");
@@ -33,7 +31,6 @@ quick.oninput = function(){
 	quickOutput.innerHTML = this.value;
 	updateArea(quickArray, "quick", this.value); 
 }
-
 //merge sort slider
 let merge = document.getElementById("mergeSlide");
 let mergeOutput = document.getElementById("mergeNum");
@@ -47,7 +44,6 @@ merge.oninput = function(){
 	mergeOutput.innerHTML = this.value; 
 	updateArea(mergeArray, "merge", this.value);
 }
-
 //insert sort slider
 let insert = document.getElementById("insertSlide");
 let insertOutput = document.getElementById("insertNum");
@@ -61,7 +57,6 @@ insert.oninput = function(){
 	insertOutput.innerHTML = this.value; 
 	updateArea(insertArray, "insert", this.value);
 }
-
 //heapsort slider
 let heap = document.getElementById("heapSlide");
 let heapOutput = document.getElementById("heapNum");
@@ -75,7 +70,6 @@ heap.oninput = function(){
 	heapOutput.innerHTML = this.value; 
 	updateArea(heapArray, "heap", this.value);
 }
-
 //countingsort slider
 let count = document.getElementById("countSlide");
 let countOutput = document.getElementById("countNum");
@@ -89,7 +83,6 @@ count.oninput = function(){
 	countOutput.innerHTML = this.value; 
 	updateArea(countArray, "count", this.value);
 }
-
 //combsort slider
 let comb = document.getElementById("combSlide");
 let combOutput = document.getElementById("combNum");
@@ -103,7 +96,6 @@ comb.oninput = function(){
 	combOutput.innerHTML = this.value; 
 	updateArea(combArray, "comb", this.value);
 }
-
 //shellsort slider
 let shell = document.getElementById("shellSlide");
 let shellOutput = document.getElementById("shellNum");
@@ -117,7 +109,6 @@ shell.oninput = function(){
 	shellOutput.innerHTML = this.value; 
 	updateArea(shellArray, "shell", this.value);
 }
-
 //bucketsort slider
 let bucket = document.getElementById("bucketSlide");
 let bucketOutput = document.getElementById("bucketNum");
@@ -131,7 +122,6 @@ bucket.oninput = function(){
 	bucketOutput.innerHTML = this.value; 
 	updateArea(bucketArray, "bucket", this.value);
 }
-
 //semi-anonymous function that will create new element
 //generate a random value for the sort
 //then attach it to the canvas area of calling sort

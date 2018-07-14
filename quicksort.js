@@ -46,8 +46,6 @@ quickSort = function(low, high, itemArr){
 }
 
 swap = function(val1, val2, holder){
-
-	//basic swap logic
 	let temp = holder[val1];
 	holder[val1] = holder[val2];
 	$('#'+qItems[val1].id).animate({height:holder[val1]+'%'},800,
@@ -59,5 +57,4 @@ swap = function(val1, val2, holder){
 		function(){
 			$(this).text(holder[val2]);
 		});
-
 }
